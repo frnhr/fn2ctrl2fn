@@ -25,7 +25,7 @@ So here it is, XML config that replaces `FN` and `LEFT_CTRL` keys:
   <item>
     <name>Swap FN and Ctrl on Integrated keyboard</name>
     <identifier>private.integrated_swap_fn_and_ctrl</identifier>
-    <!-- Apple Internal Keyboard / Trackpad (Apple Inc.) --><!-- Device ID is VERIFIED! -->
+    <!-- Apple Internal Keyboard / Trackpad (Apple Inc.) --><!-- YOUR Device ID MIGHT BE DIFFERENT! -->
     <device_only>DeviceVendor::RawValue::0x05ac,DeviceProduct::RawValue::0x0253</device_only>
 
     <!--     Remap LEFT_CTRL => FN     -->
