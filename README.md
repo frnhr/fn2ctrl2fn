@@ -7,7 +7,7 @@ I'm tired of having to think about where my left Ctrl key is! Because on Apple w
 
 ### But really, why??
 
-his causes me to make a lot of errors when using F1-12 keys. I use F7 and F8 keys very often, and it is very annoying when instead of the desired effect (debugger stepping though code) my laptop starts playing music! NO MORE!!!!!one
+This causes me to make a lot of errors when using `F1-12` keys. I use `F7` and `F8` keys very often, and it is very annoying when instead of the desired effect (debugger stepping though code) my laptop starts playing music! NO MORE!!!!!one
 
 ## Ok, how?
 
@@ -116,7 +116,7 @@ Meaning it won't work while you are:
  * etc.
 
 
-##### Apple changes those FN keys over fairly often over the years
+##### Apple changes those FN keys fairly often over the years
 
 So you might need to update the codes for your function keys, depending on your exact keyboard (e.g. "Mission control" vs "Expose").
 In this case, refer to these lists:
