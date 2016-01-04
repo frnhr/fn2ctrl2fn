@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Swap Slash and Minus</name>
+    <identifier>private.swap_slash_and_minus</identifier>
+    <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::MINUS  </autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, KeyCode::SLASH  </autogen>
+  </item>
+  <item>
+    <name>Swap FN and Ctrl on Integrated keyboard</name>
+    <identifier>private.integrated_swap_fn_and_ctrl</identifier>
+    <!-- Apple Internal Keyboard / Trackpad (Apple Inc.) --><!-- Device ID is VERIFIED! -->
+    <device_only>DeviceVendor::RawValue::0x05ac,DeviceProduct::RawValue::0x0253</device_only>
+
+    <!--     Remap LEFT_CTRL => FN     -->
+    <autogen>
+      __KeyToKey__ KeyCode::CONTROL_L, 
+                   KeyCode::FN
+    </autogen>
+    <!-- FN keeys need to be remapped explicitly, because Karabiner gets different codes for them -->
+    <autogen> __KeyToKey__  ConsumerKeyCode::BRIGHTNESS_DOWN, ModifierFlag::FN, 
+                            KeyCode::F1  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::BRIGHTNESS_UP, ModifierFlag::FN,
+                            KeyCode::F2  </autogen>
+    <autogen> __KeyToKey__  KeyCode::MISSION_CONTROL, ModifierFlag::FN,
+                            KeyCode::F3  </autogen>
+    <autogen> __DropKeyAfterRemap__ KeyCode::MISSION_CONTROL, ModifierFlag::FN </autogen>
+    <autogen> __KeyToKey__  KeyCode::LAUNCHPAD, ModifierFlag::FN,
+                            KeyCode::F4  </autogen>
+    <autogen> __DropKeyAfterRemap__ KeyCode::LAUNCHPAD, ModifierFlag::FN </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::KEYBOARDLIGHT_LOW, ModifierFlag::FN,
+                            KeyCode::F5  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::KEYBOARDLIGHT_HIGH, ModifierFlag::FN,
+                            KeyCode::F6  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::MUSIC_PREV, ModifierFlag::FN,
+                            KeyCode::F7  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::MUSIC_PLAY, ModifierFlag::FN,
+                            KeyCode::F8  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::MUSIC_NEXT, ModifierFlag::FN,
+                            KeyCode::F9  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::VOLUME_MUTE, ModifierFlag::FN,
+                            KeyCode::F10  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::VOLUME_DOWN, ModifierFlag::FN,
+                            KeyCode::F11  </autogen>
+    <autogen> __KeyToKey__  ConsumerKeyCode::VOLUME_UP, ModifierFlag::FN,
+                            KeyCode::F12  </autogen>
+
+
+    <!--     Remap FN => LEFT_CTRL     -->
+    <autogen>
+      __KeyToKey__ KeyCode::FN, 
+                   KeyCode::CONTROL_L
+    </autogen>                            
+    <!-- FN keeys need to be remapped explicitly, because Karabiner gets different codes for them -->
+    <autogen> __KeyToKey__  KeyCode::F1, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::BRIGHTNESS_DOWN, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F2, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::BRIGHTNESS_UP, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F3, ModifierFlag::CONTROL_L,
+                            KeyCode::MISSION_CONTROL, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F4, ModifierFlag::CONTROL_L,
+                            KeyCode::LAUNCHPAD, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F5, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::KEYBOARDLIGHT_LOW, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F6, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::KEYBOARDLIGHT_HIGH, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F7, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::MUSIC_PREV, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F8, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::MUSIC_PLAY, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F9, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::MUSIC_NEXT, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F10, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::VOLUME_MUTE, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F11, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::VOLUME_DOWN, ModifierFlag::CONTROL_L  </autogen>
+    <autogen> __KeyToKey__  KeyCode::F12, ModifierFlag::CONTROL_L,
+                            ConsumerKeyCode::VOLUME_UP, ModifierFlag::CONTROL_L  </autogen>
+
+  </item>
+</root>
