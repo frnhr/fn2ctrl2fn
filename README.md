@@ -101,7 +101,7 @@ So here it is, XML config that replaces `FN` and `LEFT_CTRL` keys:
 
 Yes. You can physically replace those keys, though :)
 
-![alt text](https://github.com/frnhr/fn2ctrl2fn/raw/master/src/swapped_keys.jpg "Swapped FN and LEFT_CTRL keys")
+![alt text](https://raw.githubusercontent.com/frnhr/fn2ctrl2fn/master/swapped_keys.jpg "Swapped FN and LEFT_CTRL keys")
 
 
 ## Caveats
