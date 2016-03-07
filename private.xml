@@ -1,5 +1,15 @@
 <?xml version="1.0"?>
 <root>
+
+  <item>
+    <!-- Show desktop previews in Mission Control -->
+    <!-- https://www.reddit.com/r/osx/comments/3owbrl/el_capitans_mission_control_how_to_always_show/ -->
+    <name>Mission Control to alt-cmd-F3</name>
+    <identifier>remap.fn_consumer_to_fkeys_f3_with_metas</identifier>
+    <modifier_only>ModifierFlag::NONE</modifier_only>
+    <autogen>__KeyToKey__ KeyCode::EXPOSE_ALL, KeyCode::F3, ModifierFlag::FN | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L</autogen>
+  </item>
+
   <item>
     <name>Swap Slash and Minus</name>
     <identifier>private.swap_slash_and_minus</identifier>
