@@ -1,6 +1,9 @@
 # fn2ctrl2fn
 Karabiner config for replacing FN and Left CTRL keys.
 
+> Karabiner currently not working on macOS Sierra
+
+
 ## What?
 
 I'm tired of having to think about where my left Ctrl key is! Because on Apple wired keyboard, it is the leftmost key, but on integrated keyboard on my Macbook Pro, that is the FN key (and left ctrl is just next to it).
